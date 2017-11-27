@@ -2,7 +2,11 @@ version: "3"
 services:
   ceos:
     # replace username/repo:tag with your name and image details
+<<<<<<< HEAD
     image: ceos-belin-eft 
+=======
+    image: ceosimage
+>>>>>>> f775190bd062d9e843177a0963f97bf2562f0038
     command: /sbin/init
     hostname: ceos
     stdin_open: true
