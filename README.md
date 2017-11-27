@@ -6,7 +6,7 @@ This project is to help in setting up a ceos container on docker.
 
 2. ceos.env: Contains the environment variables for the docker container
 
-Setup:
+##Setup:
 
 1. Download and import the ceos image to docker:
 
