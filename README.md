@@ -28,7 +28,7 @@ Starting docker_web_1 ...
 Starting docker_web_1 ... done  
 [Docker]$ docker ps -a  
 CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS              PORTS                    NAMES  
-a4046e768ba1        ceosimage      "/sbin/init"        About a minute ago   Up 11 seconds                                docker_web_1  
+a4046e768ba1        ceosimage           "/sbin/init"        About a minute ago   Up 11 seconds                                docker_web_1  
 ```
 
 If you want multiple ceos containers, increase the scale accoudingly. For example, to create 10 ceos containers, use "docker-compose scale web=10"
