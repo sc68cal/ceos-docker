@@ -22,7 +22,7 @@ docker import cEOSLab.tar.gz ceosimage
 4. Run "docker-compose":  
 
 ```
-[Docker]$ docker-compose scale web=1  
+[Docker]$ docker-compose scale ceos=1  
 WARNING: The scale command is deprecated. Use the up command with the --scale flag instead.  
 Starting docker_web_1 ...  
 Starting docker_web_1 ... done  
@@ -31,4 +31,4 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 a4046e768ba1        ceosimage           "/sbin/init"        About a minute ago   Up 11 seconds                                docker_web_1  
 ```
 
-If you want multiple ceos containers, increase the scale accoudingly. For example, to create 10 ceos containers, use "docker-compose scale web=10"
+If you want multiple ceos containers, increase the scale accoudingly. For example, to create 10 ceos containers, use "docker-compose scale ceos=10"
