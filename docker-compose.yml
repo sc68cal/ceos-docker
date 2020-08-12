@@ -10,3 +10,11 @@ services:
     privileged: true
     env_file:
       - ./ceos.env
+    networks:
+      - net1
+      - net2
+
+networks:
+  net1:
+
+  net2:
