@@ -3,7 +3,7 @@ services:
   ceos:
     # replace username/repo:tag with your name and image details
     image: ceos-belin-eft 
-    command: /sbin/init
+    command: /sbin/init systemd.setenv=INTFTYPE=eth systemd.setenv=ETBA=1 systemd.setenv=SKIP_ZEROTOUCH_BARRIER_IN_SYSDBINIT=1 systemd.setenv=CEOS=1 systemd.setenv=EOS_PLATFORM=ceoslab systemd.setenv=container=docker
     hostname: ceos
     stdin_open: true
     tty: true
